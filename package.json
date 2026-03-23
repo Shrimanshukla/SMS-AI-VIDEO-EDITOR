@@ -1,0 +1,34 @@
+{
+  "name": "sms-video-editor",
+  "version": "1.0.0",
+  "description": "SMS AI-Powered Video Editor - Fully Automated & Containerized",
+  "private": true,
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "setup:mac": "bash scripts/setup.sh",
+    "setup:windows": "powershell -ExecutionPolicy Bypass -File scripts/setup.ps1",
+    "start": "node scripts/start.js",
+    "start:mac": "bash scripts/start.sh",
+    "start:windows": "powershell -ExecutionPolicy Bypass -File scripts/start.ps1",
+    "start-all": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "logs": "docker-compose logs -f",
+    "logs:backend": "docker-compose logs -f backend",
+    "logs:frontend": "docker-compose logs -f frontend",
+    "build": "docker-compose build",
+    "rebuild": "docker-compose build --no-cache",
+    "clean": "docker-compose down -v && rm -rf backend/data backend/temp frontend/dist",
+    "restart": "docker-compose restart",
+    "status": "docker-compose ps"
+  },
+  "keywords": [
+    "video-editor",
+    "ai",
+    "pose-detection",
+    "ffmpeg",
+    "mediapipe",
+    "docker"
+  ],
+  "author": "",
+  "license": "MIT"
+}

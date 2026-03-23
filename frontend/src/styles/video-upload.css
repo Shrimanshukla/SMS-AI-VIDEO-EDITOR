@@ -1,0 +1,59 @@
+.upload-container {
+    border: 3px dashed rgba(102, 126, 234, 0.3);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgba(102, 126, 234, 0.02);
+}
+
+.upload-container.active {
+    border-color: #667eea;
+    background: rgba(102, 126, 234, 0.1);
+}
+
+.upload-container:hover {
+    border-color: #667eea;
+}
+
+.upload-content {
+    pointer-events: none;
+}
+
+.upload-icon {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.upload-container h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.upload-container p {
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.file-formats {
+    font-size: 0.9em;
+    color: #667eea;
+    font-weight: 600;
+}
+
+.loading {
+    margin-top: 20px;
+    color: #667eea;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}

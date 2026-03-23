@@ -1,0 +1,123 @@
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 50px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.auth-header h1 {
+    font-size: 2.5em;
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.auth-header p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.2);
+}
+
+.error-message {
+    background: #ff4757;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.auth-button:hover:not(:disabled) {
+    background: #5568d3;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.auth-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.auth-toggle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-toggle p {
+    color: #666;
+}
+
+.toggle-btn {
+    background: none;
+    color: #667eea;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.toggle-btn:hover {
+    color: #5568d3;
+}
+
+.features-list {
+    background: #f5f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.features-list h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.features-list ul {
+    list-style: none;
+}
+
+.features-list li {
+    padding: 8px 0;
+    color: #555;
+    font-size: 0.95em;
+}
