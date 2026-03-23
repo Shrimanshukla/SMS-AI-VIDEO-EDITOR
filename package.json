@@ -4,6 +4,7 @@
   "description": "SMS AI-Powered Video Editor - Fully Automated & Containerized",
   "private": true,
   "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install && cd ..",
     "setup": "node scripts/setup.js",
     "setup:mac": "bash scripts/setup.sh",
     "setup:windows": "powershell -ExecutionPolicy Bypass -File scripts/setup.ps1",
@@ -17,6 +18,8 @@
     "logs:frontend": "docker-compose logs -f frontend",
     "build": "docker-compose build",
     "rebuild": "docker-compose build --no-cache",
+    "build:frontend": "cd frontend && npm run build && cd ..",
+    "deploy:ghpages": "npm run build:frontend && echo 'Frontend build ready for GitHub Pages at ./frontend/dist'",
     "clean": "docker-compose down -v && rm -rf backend/data backend/temp frontend/dist",
     "restart": "docker-compose restart",
     "status": "docker-compose ps"
